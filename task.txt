@@ -1,18 +1,1 @@
-download XAMPP Apache and MYSQL services run access localhost--done
-1.plugins--done
-2.git init-done
-3.first commit--done
-4.working local server environment--done
-
-
-task-2
-CRUD
-1.create a MYSQL db called blog
-2.table posts-id,title,content,created_at
-users-id,userName,password
-3.CRUD-1.Form to add new posts to the database(php)
-       2.display all the posts from the db
-       3.edit existing posts
-       4.delete posts
-4.
 
