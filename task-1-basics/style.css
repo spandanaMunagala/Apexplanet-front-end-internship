@@ -1,1 +1,41 @@
 
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+header {
+  background-color: #ffcc00;
+  padding: 20px;
+}
+
+.food-container {
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center;     /* Center them horizontally */
+  padding: 20px;
+  gap: 20px;               /* Space between each food-card */
+}
+
+.food-card {
+  width: 320px;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff5e1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+img {
+  border-radius: 8px;
+  max-width: 100%;
+  height: auto;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+} styles.css
