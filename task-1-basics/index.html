@@ -1,36 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Delicious Food</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basics of Web Development</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Delicious Food</h1>
-  </header>
 
-  <section class="food-container">
-    <div class="food-card">
-      <img src="https://cdn.pixabay.com/photo/2017/12/09/08/18/pizza-3007395_1280.jpg" alt="Pizza" width="300" height="200">
-      <h3>Pizza</h3>
-      <p>Cheesy and hot!</p>
-      <a class="learn-link" href="https://en.wikipedia.org/wiki/Pizza" target="_blank">Learn more about Pizza</a>
-    </div>
+    <!-- Header -->
+    <header class="header">
+        <h1>Basics of Web Development</h1>
+        <p> HTML • CSS • JavaScript</p>
+    </header>
 
-    <div class="food-card">
-      <img src="https://cdn.pixabay.com/photo/2016/03/05/19/02/hamburger-1238246_1280.jpg" alt="Burger" width="300" height="200">
-      <h3>Burger</h3>
-      <p>Juicy and tasty!</p>
-      <a class="learn-link" href="https://en.wikipedia.org/wiki/Hamburger" target="_blank">Learn more about Burger</a>
-    </div>
+    <!-- Main Content -->
+    <main class="container">
 
-    <div class="food-card">
-      <img src="https://cdn.pixabay.com/photo/2015/04/08/13/13/food-712665_1280.jpg" alt="Pasta" width="300" height="200">
-     >
-</html <h3>Pasta</h3>
-      <p>Delicious Italian pasta.</p>
-      <a class="learn-link" href="https://en.wikipedia.org/wiki/Pasta" target="_blank">Learn more about Pasta</a>
-    </div>
-  </section>
+         <section class="card">
+            <img src="data:image/webp;base64,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" alt="HTML Logo" class="card-img">
+            <h2>HTML</h2>
+            <p>
+                HTML (HyperText Markup Language) is used to create the structure
+                of web pages using elements like headings, paragraphs, images, and links.
+            </p>
+        </section>
+
+        <section class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZAc4BswrDj_q0JcxkRYJ09NDHtv5GEfzOzQ&s" alt="CSS Logo" class="card-img">
+            <h2>CSS</h2>
+            <p>
+                CSS (Cascading Style Sheets) is used to style the webpage by
+                adding colors, fonts, spacing, and layouts.
+            </p>
+        </section>
+
+        <section class="card">
+            <img src="https://www.bing.com/th/id/OIP.ZZaV8f0-sI1l6dcdApuE6gHaEK?w=221&h=211&c=8&rs=1&qlt=90&o=6&cb=ucfimg1&dpr=1.5&pid=3.1&rm=2&ucfimg=1" alt="JavaScript Logo" class="card-img">
+            <h2>JavaScript</h2>
+            <p>
+                JavaScript adds interactivity to web pages such as button clicks,
+                alerts, form validation, and dynamic content updates.
+            </p>
+            <button id="alertBtn">Click Me</button>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2025 Web Development Basics | Created by Spandana Munagala</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
+</html>
