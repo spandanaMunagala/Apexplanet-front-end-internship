@@ -1,3 +1,5 @@
-function orderNow(item) {
-  alert("You have ordered: " + item + " 🍽");
-} script.js
+const alertButton = document.getElementById("alertBtn");
+
+alertButton.addEventListener("click", function () {
+    alert("Hello! You just used JavaScript interactivity ");
+});
