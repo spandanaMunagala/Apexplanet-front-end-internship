@@ -1,5 +1,4 @@
-# Basics of Web Development
-Task 1: Basics of HTML, CSS, and JavaScript 
+# Task 1: Basics of Web Development
 
 COMPANY:APEXPLANET SOFTWARE PVT.LTD.
 
