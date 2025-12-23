@@ -10,17 +10,13 @@ DURATION:6 WEEKS
 This project is part of my **Front-End Development Internship at ApexPlanet**.  
 Task-2 focuses on building an intermediate-level front-end application using **HTML, CSS, and JavaScript**, with emphasis on **form validation, responsive layout, and DOM manipulation**.
 
----
-
-## 🎯 Objective
+##  Objective
 - Enhance HTML and CSS skills
 - Use JavaScript for form validation
 - Practice DOM manipulation
 - Create a responsive layout using Flexbox and CSS Grid
 
----
-
-## 🧩 Features Implemented
+##  Features Implemented
 
 ### 1️⃣ Contact Form (HTML & CSS)
 - Input fields:
@@ -44,22 +40,17 @@ Task-2 focuses on building an intermediate-level front-end application using **H
 - Remove tasks by clicking on them
 - Real-time DOM updates using JavaScript
 
----
-
-## 🛠️ Technologies Used
+##  Technologies Used
 - HTML5
 - CSS3 (Flexbox & Grid)
 - JavaScript (DOM Manipulation & Validation)
 
----
-
-## 🚀 How to Run
+##  How to Run
 1. Open the `task2` folder
 2. Open `index.html` in any web browser
 3. Test the contact form and to-do list functionality
 
----
 
-## 👩‍💻 Author
+##  Author
 **Spandana Munagala**
 
