@@ -1,0 +1,130 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.header h1 {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+/* Grid Layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 40px;
+  flex: 1;
+}
+
+/* Card */
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #0f766e;
+}
+
+/* Form Layout */
+.form-box {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.form-fields {
+  flex: 1;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #99f6e4;
+}
+
+input:focus {
+  outline: none;
+  border-color: #14b8a6;
+}
+
+/* Button at bottom */
+button {
+  margin-top: auto;
+  padding: 10px;
+  background: #0f766e;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+button:hover {
+  background: #115e59;
+}
+
+/* Message */
+#message {
+  margin-top: 8px;
+  font-size: 14px;
+}
+
+/* To-do list */
+#taskList li {
+  list-style: none;
+  background: #ccfbf1;
+  padding: 8px;
+  margin-top: 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Footer */
+.footer {
+  background: transparent;
+  color: #64748b;
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  border-top:1px solid #e5e7eb;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 26px;
+  }
+}
