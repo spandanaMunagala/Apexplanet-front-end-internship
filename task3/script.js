@@ -1,23 +1,33 @@
-/* QUIZ DATA */
+/* QUIZ DATA (Rare & Professional Questions) */
 const quizData = [
   {
-    question: "Which planet is known as the Red Planet?",
-    options: ["Earth", "Mars", "Venus", "Jupiter"],
-    answer: "Mars"
+    question: "Which country was the first to use paper currency?",
+    options: ["India", "China", "Japan", "Egypt"],
+    answer: "China"
   },
   {
-    question: "What is the capital of Japan?",
-    options: ["Seoul", "Tokyo", "Beijing", "Bangkok"],
-    answer: "Tokyo"
+    question: "What does HTTP stand for?",
+    options: [
+      "HyperText Transfer Protocol",
+      "High Transfer Text Process",
+      "Hyper Transfer Text Program",
+      "Host Text Transfer Path"
+    ],
+    answer: "HyperText Transfer Protocol"
   },
   {
-    question: "Who wrote 'Romeo and Juliet'?",
-    options: ["William Wordsworth", "William Shakespeare", "Charles Dickens", "Jane Austen"],
-    answer: "William Shakespeare"
+    question: "Which element has the chemical symbol 'Au'?",
+    options: ["Silver", "Oxygen", "Gold", "Argon"],
+    answer: "Gold"
   },
   {
-    question: "What is the largest ocean on Earth?",
-    options: ["Atlantic", "Indian", "Pacific", "Arctic"],
+    question: "Which year was JavaScript first released?",
+    options: ["1990", "1995", "2000", "2005"],
+    answer: "1995"
+  },
+  {
+    question: "Which ocean is the deepest in the world?",
+    options: ["Indian", "Atlantic", "Pacific", "Arctic"],
     answer: "Pacific"
   }
 ];
@@ -39,36 +49,20 @@ function loadQuestion() {
   current.options.forEach(option => {
     const btn = document.createElement("button");
     btn.textContent = option;
-    btn.onclick = () => checkAnswer(option);
-    optionsEl.appendChild(btn);
-  });
-}
-
-/* CHECK ANSWER */
-function loadQuestion() {
-  const current = quizData[currentIndex];
-  questionEl.textContent = current.question;
-  optionsEl.innerHTML = "";
-
-  current.options.forEach(option => {
-    const btn = document.createElement("button");
-    btn.textContent = option;
 
     btn.onclick = () => {
-      const correct = current.answer;
-
       // Disable all buttons
       document.querySelectorAll(".options button").forEach(b => {
         b.disabled = true;
-        if (b.textContent === correct) {
-          b.style.background = "#4caf50"; // green
+        if (b.textContent === current.answer) {
+          b.style.background = "#4caf50";
           b.style.color = "white";
         }
       });
 
-      // Wrong selection highlight
-      if (option !== correct) {
-        btn.style.background = "#f44336"; // red
+      // Wrong answer highlight
+      if (option !== current.answer) {
+        btn.style.background = "#f44336";
         btn.style.color = "white";
       } else {
         score++;
@@ -81,7 +75,7 @@ function loadQuestion() {
   });
 }
 
-/* NEXT */
+/* NEXT QUESTION */
 nextBtn.onclick = () => {
   currentIndex++;
   if (currentIndex < quizData.length) {
@@ -92,7 +86,7 @@ nextBtn.onclick = () => {
   }
 };
 
-/* RESULT */
+/* SHOW RESULT */
 function showResult() {
   questionEl.textContent = `🎉 You scored ${score} out of ${quizData.length}!`;
   optionsEl.innerHTML = "";
