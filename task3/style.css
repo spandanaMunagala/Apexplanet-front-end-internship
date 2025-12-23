@@ -9,14 +9,14 @@
 /* BODY */
 body {
   min-height: 100vh;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  background: linear-gradient(135deg, #d342d1, #336bd3);
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
 }
 
-/* APP CONTAINER */
+/* APP */
 .app {
   width: 90%;
   max-width: 520px;
@@ -34,7 +34,6 @@ header h1 {
 
 header p {
   opacity: 0.9;
-  margin-top: 5px;
 }
 
 /* CARD */
@@ -64,7 +63,7 @@ header p {
   margin: 6px 0;
   border: none;
   border-radius: 8px;
-  background: #ffffff;
+  background: white;
   color: #333;
   cursor: pointer;
   transition: 0.3s;
@@ -78,8 +77,8 @@ header p {
 .primary-btn {
   background: #ff5722;
   color: white;
-  border: none;
   padding: 10px 18px;
+  border: none;
   border-radius: 8px;
   margin-top: 12px;
   cursor: pointer;
@@ -92,8 +91,8 @@ header p {
 .secondary-btn {
   background: #03a9f4;
   color: white;
-  border: none;
   padding: 10px 18px;
+  border: none;
   border-radius: 8px;
   margin-top: 12px;
   cursor: pointer;
