@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 4 | Full Project Implementation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header class="header">
+  <div>
+    <h1>Full Project Implementation</h1>
+    <p>HTML • CSS • JavaScript</p>
+  </div>
+  <button onclick="toggleTheme()">🌙</button>
+</header>
+
+<main class="container">
+
+  <!-- PORTFOLIO -->
+  <section class="card">
+    <h2>👩‍💻 Portfolio</h2>
+    <p><b>Name:</b> Spandana Munagala</p>
+    <p><b>Role:</b> Web Development Intern</p>
+    <p><b>Skills:</b> HTML, CSS, JavaScript, PHP</p>
+    <p class="badge">Real-World Project Builder</p>
+  </section>
+
+  <!-- TODO -->
+  <section class="card">
+    <h2>📝 Smart To-Do</h2>
+    <div class="todo-input">
+      <input type="text" id="taskInput" placeholder="Add a task">
+      <button onclick="addTask()">Add</button>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="card">
+    <h2>🛒 Product Explorer</h2>
+
+    <div class="controls">
+      <input type="text" placeholder="Search product" onkeyup="searchProduct(this.value)">
+      <select onchange="filterProducts(this.value)">
+        <option value="all">All Categories</option>
+        <option value="electronics">Electronics</option>
+        <option value="fashion">Fashion</option>
+      </select>
+      <button onclick="sortProducts()">Sort ₹</button>
+    </div>
+
+    <div id="productList" class="product-grid"></div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  © 2025 | Designed & Developed by Spandana
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
