@@ -24,3 +24,6 @@ It demonstrates core front-end development concepts with a focus on **performanc
 - HTML
 - CSS
 - JavaScript
+
+## Author
+**Spandana Munagala**
